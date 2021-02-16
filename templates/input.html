@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Enter New CheatSheet Item</h2>
+
+    <form action="" method="post">
+        <p>
+            <!-- this creates a text box with the label of "item" -->
+            {{form.item.label}}<br>
+            {{form.item(size=30)}}
+        </p>
+        <p>
+            {{form.command.label}}<br>
+            {{form.command(size=30)}}
+        </p>
+        <p>
+            {{form.example.label}}<br>
+            {{form.example(size=30)}}
+        </p>
+        <p>
+            <!-- this creates a submit button with the label of "submit" -->
+            {{form.submit()}}<br>
+        </p>
+    </form>
+{% endblock%}
